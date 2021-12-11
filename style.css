@@ -138,11 +138,21 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    display: flex;
+    justify-content: start;
+    height: 385px;
+    overflow-x:scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+    
+}
 .main-currency-table, 
 .main-comisions-table{
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 235px;
-    max-width: 500px;
+    min-width: 320px;
+    max-width: 400px;
     height: 360px;
     margin: 0 auto;
     font-family: "Inter", sans-serif;
@@ -434,6 +444,9 @@ main{
     font-weight: 300;
     color: var(--warm-black);
 }
+.plans-container--card .plan-card--saving {
+    padding-top: 0;
+  }
 .plan-card--ca{
     width: 150px;
     height: 48px;
@@ -453,4 +466,30 @@ main{
     height: 20px;
     background-image: url("./assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.footer-right li{
+    margin: 10px 0;
+}
+.footer-left a{
+    text-decoration: none;
+    color: var(--just-white);
 }
